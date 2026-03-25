@@ -1,28 +1,30 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from model import CareerRecommender
 
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/recommend', methods=['POST'])
+recommender = CareerRecommender()
+
+@app.route('/api/recommend', methods=['POST'])
 def recommend():
-    data = request.json
+    try:
+        data = request.get_json()
 
-    # Score-based system
-    dev_score = data.get("coding", 0) + data.get("problem", 0)
-    cyber_score = data.get("security", 0) + data.get("network", 0)
-    design_score = data.get("design", 0)
+        result = recommender.get_recommendation(data)
 
-    if dev_score >= cyber_score and dev_score >= design_score:
-        career = "Software Developer"
-    elif cyber_score >= dev_score and cyber_score >= design_score:
-        career = "Cybersecurity Analyst"
-    else:
-        career = "UI/UX Designer"
+        return jsonify({
+            "status": "success",
+            "recommended_career": result
+        }), 200
 
-    return jsonify({
-        "career": f"Recommended Career: {career}"
-    })
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
