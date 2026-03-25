@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Interests | Career Guidance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🔐 Login Protection -->
+<script>
+  if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Choose Your Career Interest</h2>
+
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='tech.html'">
+        <h4 class="card-title">💻 Technology & IT</h4>
+        <p>Software, Cloud, Development</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='cyber.html'">
+        <h4 class="card-title">🔐 Cybersecurity</h4>
+        <p>Ethical Hacking, SOC, Security</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='data.html'">
+        <h4 class="card-title">📊 Data & Analytics</h4>
+        <p>Data Science, ML, AI</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='design.html'">
+        <h4 class="card-title">🎨 Design & Creativity</h4>
+        <p>UI/UX, Graphic Design</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='business.html'">
+        <h4 class="card-title">💼 Business & Management</h4>
+        <p>Marketing, Management</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 text-center" onclick="location.href='science.html'">
+        <h4 class="card-title">🧪 Science & Research</h4>
+        <p>Research, Innovation</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

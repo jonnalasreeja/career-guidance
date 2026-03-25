@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+    }
+
+    .brand {
+      color: #007bff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+    }
+
+    .hero-header h2 {
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .hero-head {
+      color: #007bff;
+    }
+
+    #btns {
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    #btns:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .who {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .guide {
+      color: #007bff;
+    }
+
+    .wassup {
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.8;
+      margin-top: 30px;
+    }
+
+    .login {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #contact {
+      background: #f8f9fa;
+    }
+
+    #contact h1, #contact h2 {
+      font-weight: bold;
+    }
+
+    .inputbox input,
+    .inputbox textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .inputbox input[type="submit"] {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .inputbox input[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Career <span class="brand">Guidance</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white ml-3" href="login.html">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="hero-header">
+            <h2>
+              Build Your Future With Confidence.<br>
+              We Help You <span class="hero-head">Choose the Right Career Path</span>.
+            </h2>
+            <p class="mt-4 text-muted">
+              Personalized career guidance based on your interests, skills, and future industry trends.
+            </p>
+            <a href="#about">
+              <button class="btn btn-primary mt-3" id="btns">
+                Explore Career Guidance
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="who">Who <span class="guide">We Are</span></h2>
+      <p class="wassup">
+        Career Guidance is a smart platform designed to help students make informed career decisions.
+        <br><br>
+        We analyze your interests, aptitude, and skills to recommend career paths that align with real-world
+        opportunities.
+        <br><br>
+        Our mission is to empower students after high school with clarity, confidence, and direction.
+      </p>
+      <div class="login">
+        <a href="login.html">
+          <button class="btn btn-dark" id="btns">Get Started</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h1>Contact Info</h1>
+          <p>Email: sreeja@student.com</p>
+          <p>Phone: 99-99-99-00-01</p>
+        </div>
+        <div class="col-md-7">
+          <h2>Send a Message</h2>
+          <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
