@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Guidance System</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,44 +10,40 @@
 
 <div class="container">
     <h1>Career Guidance System</h1>
-    <p>Answer the questions to get a personalized career suggestion</p>
+    <p class="subtitle">Get personalized career recommendations</p>
 
     <form id="quizForm">
+        <div class="form-group">
+            <label>Do you enjoy coding?</label>
+            <select name="coding">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
 
-        <label>Do you enjoy coding?</label>
-        <select name="coding">
-            <option value="2">Yes</option>
-            <option value="0">No</option>
-        </select>
+        <div class="form-group">
+            <label>Do you like problem solving?</label>
+            <select name="problem">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
 
-        <label>Are you good at problem solving?</label>
-        <select name="problem">
-            <option value="2">Yes</option>
-            <option value="0">No</option>
-        </select>
-
-        <label>Interested in cybersecurity?</label>
-        <select name="security">
-            <option value="2">Yes</option>
-            <option value="0">No</option>
-        </select>
-
-        <label>Do you like working with networks?</label>
-        <select name="network">
-            <option value="2">Yes</option>
-            <option value="0">No</option>
-        </select>
-
-        <label>Do you enjoy designing interfaces?</label>
-        <select name="design">
-            <option value="2">Yes</option>
-            <option value="0">No</option>
-        </select>
+        <div class="form-group">
+            <label>Interested in cybersecurity?</label>
+            <select name="security">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
 
         <button type="submit">Get Recommendation</button>
     </form>
 
-    <h2 id="result"></h2>
+    <div id="resultBox" class="hidden">
+        <h2>Recommended Career:</h2>
+        <p id="result"></p>
+    </div>
 </div>
 
 <script src="script.js"></script>
