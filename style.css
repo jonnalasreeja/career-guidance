@@ -1,37 +1,45 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #667eea, #764ba2);
-    text-align: center;
-    color: #333;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
 }
 
 .container {
-    background: #fff;
-    padding: 25px;
-    margin: 60px auto;
     width: 350px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 80px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-h1 {
-    color: #333;
+.subtitle {
+    color: gray;
+    font-size: 14px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
 }
 
 select, button {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
 }
 
 button {
-    background: #667eea;
+    background-color: #007bff;
     color: white;
     border: none;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
-    background: #5a67d8;
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
 }
