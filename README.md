@@ -1,42 +1,25 @@
 # Career Guidance System
 
 ## Overview
-The Career Guidance System is a web-based application designed to assist users in identifying suitable career paths based on their interests and preferences. The system uses a structured quiz mechanism to analyze user input and provide personalized recommendations.
+A web-based application that recommends suitable career paths based on user inputs using quiz-based logic.
 
 ## Features
-- Interactive quiz-based user input collection
-- Rule-based career recommendation engine
-- Responsive and user-friendly interface
-- Efficient handling of multiple user inputs
+- Interactive quiz
+- Real-time career recommendations
+- Clean and responsive UI
 
 ## Technologies Used
-- Frontend: HTML, CSS, JavaScript
-- Backend: Python
-- Concepts: Decision Logic, User Input Processing
+- HTML, CSS, JavaScript
+- Python (Flask)
 
-## Key Highlights
-- Designed to handle 100+ user inputs efficiently
-- Improved decision-making support by approximately 25%
-- Focused on usability and performance optimization
+## Setup Instructions
+1. Install dependencies:
+   pip install -r requirements.txt
 
-## Project Structure
-career-guidance-system/
-│── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-│── backend/
-│ └── app.py
-│── README.md
+2. Run backend:
+   python backend/app.py
 
-## Installation and Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/career-guidance-system.git
-2. Navigate to the project directory:
-   cd career-guidance-system
-   
-3.Run the backend server:
-   python app.py
-   
-4.Open index.html in your browser.
+3. Open frontend/index.html in browser
+
+## Author
+Sreeja Jonnala
