@@ -35,6 +35,8 @@ career-guidance-system/
    git clone https://github.com/your-username/career-guidance-system.git
 2. Navigate to the project directory:
    cd career-guidance-system
+   
 3.Run the backend server:
    python app.py
+   
 4.Open index.html in your browser.
